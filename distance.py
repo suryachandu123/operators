@@ -28,3 +28,16 @@ distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 print(f"The distance between Ajay's house and Chandru's house is {distance:.2f}")
 
 '''
+import math
+
+# Input coordinates for the two points
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+# Calculate the distance using the distance formula
+distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+# Print the distance with formatting to 2 decimal places
+print(f"The distance between Ajay's house and Chandru's house is {distance:.2f}")
