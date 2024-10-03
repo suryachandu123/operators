@@ -34,3 +34,16 @@ area = abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
 print(f"The area of the triangle is {area:.2f}")
 
 '''
+# Input coordinates of the triangle's vertices
+x1 = int(input())  # x1 coordinate
+y1 = int(input())  # y1 coordinate
+x2 = int(input())  # x2 coordinate
+y2 = int(input())  # y2 coordinate
+x3 = int(input())  # x3 coordinate
+y3 = int(input())  # y3 coordinate
+
+# Calculate the area of the triangle using the given formula
+area = abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
+
+# Output the area formatted to 2 decimal places
+print(f"The area of the triangle is {area:.2f}")
