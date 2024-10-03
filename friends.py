@@ -10,3 +10,21 @@ Input (stdin)
 Output (stdout)
 Binoy's house is located at (6.0,9.5)
 '''
+# Function to calculate the midpoint of the line joining two points
+def find_midpoint(x1, y1, x2, y2):
+    # Calculate the midpoint coordinates
+    x_mid = (x1 + x2) / 2
+    y_mid = (y1 + y2) / 2
+    return x_mid, y_mid
+
+# Input the coordinates for Ajay's and Chandru's houses
+x1 = int(input())  # x-coordinate of Ajay's house
+y1 = int(input())  # y-coordinate of Ajay's house
+x2 = int(input())  # x-coordinate of Chandru's house
+y2 = int(input())  # y-coordinate of Chandru's house
+
+# Calculate the midpoint
+mid_x, mid_y = find_midpoint(x1, y1, x2, y2)
+
+# Display the result formatted to 1 decimal place
+print(f"Binoy's house is located at ({mid_x:.1f},{mid_y:.1f})")
