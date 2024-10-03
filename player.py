@@ -29,3 +29,19 @@ ps=(s/ti)*100
 pb=(b/ti)*100
 pe=(e/ti)*100
 print("%.2f"%ps,"%.2f"%pb,"%.2f"%pe)
+'''
+# Input Dhoni's income from different sources
+s = int(input())  # Income from Salary
+b = int(input())  # Income from Bonuses and Awards
+e = int(input())  # Income from Endorsements
+
+# Total income
+ti = s + b + e
+
+# Calculate percentages
+ps = (s / ti) * 100  # Percentage from Salary
+pb = (b / ti) * 100  # Percentage from Bonuses and Awards
+pe = (e / ti) * 100  # Percentage from Endorsements
+
+# Output the percentages formatted to 2 decimal places
+print(f"{ps:.2f} {pb:.2f} {pe:.2f}")
