@@ -15,3 +15,21 @@ Sample input and output 2:
 60000
 354000.00
 '''
+# Define the function to calculate total contribution towards the flood relief
+def calculate_contribution(X, Y):
+    senior_players = 6
+    junior_players = 5
+    senior_contribution = senior_players * (0.50 * X)
+    junior_contribution = junior_players * (0.40 * Y)
+    total_contribution = senior_contribution + junior_contribution
+    return round(total_contribution, 2)
+
+# Input for senior and junior player salaries
+X = int(input())  # Salary of senior players
+Y = int(input())  # Salary of junior players
+
+# Calculate the total contribution
+result = calculate_contribution(X, Y)
+
+# Display the total contribution rounded to 2 decimal places
+print(f"{result:.2f}")
