@@ -32,3 +32,18 @@ if x2 != x1:
 else:
     print("The line is vertical, slope is undefined")
 '''
+# Input coordinates of the two points
+x1 = int(input())  # x1 coordinate
+y1 = int(input())  # y1 coordinate
+x2 = int(input())  # x2 coordinate
+y2 = int(input())  # y2 coordinate
+
+# Check if the line is vertical
+if x2 != x1:
+    # Calculate the slope
+    slope = (y2 - y1) / (x2 - x1)
+    # Output the slope formatted to 2 decimal places
+    print(f"The slope of the line joining Ajay's house and Binoy's house is {slope:.2f}")
+else:
+    # If the line is vertical, the slope is undefined
+    print("The line is vertical, slope is undefined")
