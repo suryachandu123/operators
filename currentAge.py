@@ -15,3 +15,16 @@ Note: Bold highlighted is the output value.
 cAge=int(input())
 deviAge =((cAge+3)*4)-3
 print(deviAge)
+'''
+# Function to calculate Devki Devi's current age
+def calculate_mothers_age(dhonis_age):
+    # After 3 years, Devki Devi's age will be 4 times Dhoni's age
+    devi_age = ((dhonis_age + 3) * 4) - 3
+    return devi_age
+
+# Input
+cAge = int(input())  # Dhoni's current age
+
+# Calculate and display Devki Devi's current age
+deviAge = calculate_mothers_age(cAge)
+print(deviAge)
