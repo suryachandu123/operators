@@ -16,3 +16,26 @@ Sample input and output 2:
 30
 40
 '''
+# Function to find the ages of the players
+def find_player_ages(total_age):
+    # Let age of players X and Y be a
+    # Age of player Z will then be a + 10
+    # The equation becomes: 2a + (a + 10) = total_age
+    # Simplifying: 3a + 10 = total_age
+    # Therefore, a = (total_age - 10) / 3
+    a = (total_age - 10) / 3
+    x_age = int(a)   # Age of player X
+    y_age = int(a)   # Age of player Y
+    z_age = x_age + 10  # Age of player Z
+    return x_age, y_age, z_age
+
+# Input: Total age of the three players
+total_age = int(input())
+
+# Calculate ages
+x_age, y_age, z_age = find_player_ages(total_age)
+
+# Output the ages
+print(x_age)
+print(y_age)
+print(z_age)
