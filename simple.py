@@ -26,3 +26,13 @@ Sample Input 3
 Sample Output 3
 525.0
 '''
+# Input: Principal amount, Rate of interest, and Time in years
+principal = float(input())  # Principal amount
+rate = float(input())        # Rate of interest per annum
+time = float(input())        # Time in years
+
+# Calculate Simple Interest
+simple_interest = (principal * rate * time) / 100
+
+# Output the Simple Interest
+print(simple_interest)
