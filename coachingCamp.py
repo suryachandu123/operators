@@ -23,3 +23,20 @@ y=float(input())
 z=float(input())
 a=(x*z*30)/y
 print("%.2f"%a)
+'''
+# Function to calculate the total amount needed for petrol
+def calculate_petrol_cost(X, Y, Z):
+    # Total travel distance for 30 days (to and fro)
+    total_distance = 2 * X * 30
+    # Calculate the total litres required and multiply by the cost of petrol
+    total_cost = (total_distance / Y) * Z
+    return round(total_cost, 2)
+
+# Input
+X = float(input())  # Distance to the camp in kms
+Y = float(input())  # Mileage of the bike in km/litre
+Z = float(input())  # Cost of petrol in rupees
+
+# Calculate and display the total amount needed for petrol
+total_amount = calculate_petrol_cost(X, Y, Z)
+print(f"{total_amount:.2f}")
