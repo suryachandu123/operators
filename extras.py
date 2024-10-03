@@ -24,3 +24,19 @@ Sample input and output 2:
 1
 17
 '''
+# Function to calculate total runs from extras
+def calculate_extras(no_balls, wides, byes, leg_byes, penalty):
+    # Each penalty adds 5 runs, other types are single runs
+    total_extras = no_balls + wides + byes + leg_byes + (penalty * 5)
+    return total_extras
+
+# Input
+no_balls = int(input())  # Number of no balls
+wides = int(input())     # Number of wides
+byes = int(input())      # Number of byes
+leg_byes = int(input())  # Number of leg-byes
+penalty = int(input())   # Number of penalty runs (each penalty is 5 runs)
+
+# Calculate and display the total runs from extras
+total_runs = calculate_extras(no_balls, wides, byes, leg_byes, penalty)
+print(total_runs)
